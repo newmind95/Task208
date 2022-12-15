@@ -24,28 +24,33 @@ main {
   flex-flow: row;
 }
 
-@media screen and (max-width: 1200px) {
-  main {
-    padding: 200px;
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    flex-flow: column;
-  }
-}
-
-button {
+.span {
   text-transform: uppercase;
 }
 
-.white {
-  color: white;
+.is-rounded {
+  text-transform: uppercase;
+}
+
+.is-3 {
+  color: #f2f2f2;
 }
 
 .box {
   border-radius: 25px;
   background-color: #796ad9;
   color: #f2f2f2;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    font-family: laca;
+    padding: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    flex-flow: column;
+  }
 }
 
 .value {
@@ -60,8 +65,23 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+	height: 300px;
+	width: 400px;
 }
 
 .best-price {
+	margin-top: 20px;
   text-transform: uppercase;
+}
+
+.title {
+	margin: 20px;
+}
+
+.paragraph {
+	padding-top: 20px;
+}
+
+.buttons {
+	padding: 10px 0 0 10px;
 }
